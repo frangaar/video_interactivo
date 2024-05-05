@@ -111,7 +111,11 @@ document.addEventListener('DOMContentLoaded',function () {
         let currentTime = video.currentTime;
         
         if(currentTime >= 28 && currentTime < 28.2){
-            video.currentTime = 7.5;
+           let bordesParpadeo = document.querySelectorAll('.botones-redondos button');
+            bordesParpadeo.forEach(borde => {
+                borde.classList.add('borde-parpadeante');
+            }) 
+           video.currentTime = 7.5;
         }else if(currentTime >= 61.6 && currentTime < 61.8){
             video.currentTime = 27.8;
         }else if(currentTime >= 81 && currentTime < 81.2){
