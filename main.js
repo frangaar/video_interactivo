@@ -69,11 +69,11 @@ document.addEventListener('DOMContentLoaded',function () {
         // }
         let currentTime = video.currentTime;
         
-        if(currentTime >= 7.5 && currentTime <= 7.7){
+        if(currentTime >= 7.2 && currentTime <= 7.4){
             let botones = document.querySelector('.botones-redondos');
             botones.classList.add('mostrar');
             video.pause();
-        }else if(currentTime >= 28 && currentTime < 28.2){
+        }else if(currentTime >= 27.4 && currentTime < 27.6){
             let botones = document.querySelector('#controles');
             botones.classList.add('mostrar');
             video.pause();
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded',function () {
             bordesParpadeo.forEach(borde => {
                 borde.classList.add('borde-parpadeante');
             }) 
-           video.currentTime = 7.5;
+           video.currentTime = 7.6;
         }else if(currentTime >= 61.6 && currentTime < 61.8){
             video.currentTime = 27.8;
         }else if(currentTime >= 81 && currentTime < 81.2){
