@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded',function () {
         // }
         let currentTime = video.currentTime;
         
-        if(currentTime >= 7.2 && currentTime <= 7.4){
+        if(currentTime >= 7.5 && currentTime <= 7.7){
             let botones = document.querySelector('.botones-redondos');
             botones.classList.add('mostrar');
             video.pause();
@@ -110,17 +110,17 @@ document.addEventListener('DOMContentLoaded',function () {
 
         let currentTime = video.currentTime;
         
-        if(currentTime >= 28 && currentTime < 28.2){
+        if(currentTime >= 27.4 && currentTime < 27.6){
            let bordesParpadeo = document.querySelectorAll('.botones-redondos button');
             bordesParpadeo.forEach(borde => {
                 borde.classList.add('borde-parpadeante');
             }) 
-           video.currentTime = 7.6;
+           video.currentTime = 7.5;
         }else if(currentTime >= 61.6 && currentTime < 61.8){
-            video.currentTime = 27.8;
-        }else if(currentTime >= 81 && currentTime < 81.2){
-            video.currentTime = 61;
-        }else if(currentTime >= 101 && currentTime < 101.2){
+            video.currentTime = 27.6;
+        }else if(currentTime >= 80.7 && currentTime < 80.9){
+            video.currentTime = 61.9;
+        }else if(currentTime >= 100.7 && currentTime < 100.9){
             video.currentTime = 81;
         }else if(currentTime >= 121 && currentTime < 121.4){
             video.currentTime = 101;
